@@ -1,5 +1,4 @@
-from pynput.mouse import Controller
-
+from pynput.keyboard import Controller
 
 def controlMouse():
     mouse = Controller()
@@ -7,4 +6,8 @@ def controlMouse():
     mouse.position = (100,200) 
     print("posicion después del cambio",mouse.position)
 
-controlMouse()      
+def controlKeyboard():
+    keyboard = Controller()
+    keyboard.type("esto esta bien guapo!!!")
+
+controlKeyboard()      
